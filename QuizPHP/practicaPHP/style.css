@@ -1,0 +1,72 @@
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(gray,black);
+    background-repeat: no-repeat ;
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+
+h1 {
+    margin: 40px;
+}
+
+img {
+    margin: 40px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+.si {
+    transition: all .2s ease-in-out;
+}
+
+.si:hover {
+   background-color: greenyellow;
+   transform: scale(2.1);
+}
+
+.no:hover{
+    animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+    background-color: rgb(200, 44, 44);
+}
+
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(8px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-16px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(16px, 0, 0);
+    }
+
+    
+  }

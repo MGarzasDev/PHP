@@ -1,0 +1,10 @@
+CREATE DATABASE quizdb;
+USE quizdb;
+
+CREATE TABLE quiz_results (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    score INT NOT NULL,
+    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);
